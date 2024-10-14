@@ -8,7 +8,8 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <nav class="nav w-full h-12 px-4 py-2 sm:px-6 md:px-10">
+    <!-- Navigation -->
+    <nav class="nav w-full h-fit px-4 py-2 bg-gray-400 sm:px-6 md:px-10">
       <div class="container m-auto flex justify-between items-center w-full">
         <div class="logo font-bold text-xl lg:text-2xl">
           <h1 class="cursor-default">Digital Den</h1>
@@ -24,13 +25,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero w-full h-[90vh] px-4 py-4 sm:px-6 md:px-10">
+    <section class="hero w-full h-[90vh] px-4 py-4   sm:px-6 md:px-10">
       <div class="container m-auto flex flex-col">
         <div
           class="main-hero m-auto md:items-center sm:flex flex-row-reverse relative"
         >
           <div class="hero-slider w-[450px]">
-            <img name="slide" alt="hero-slider" />
+            <img class="w-full" name="slide" alt="hero-slider" />
           </div>
           <div
             class="hero-text bg-hero-text-bgc absolute top-[58%] p-3 w-[450px] md:w-[550px] md:relative md:bg-white"
@@ -38,6 +39,11 @@
             <h1 class="font-bold text-2xl lg:text-3xl text-white md:text-black">
               We Sell The Best Quality iPhone and Samsung Phone You'll Ever Buy
             </h1>
+            <p class="hidden md:block text-sm">
+              At Digital Den we sell UK used iPhone and Samsung phones with
+              their respective accessories like chargers, phone cases, screen
+              guards and airpods.
+            </p>
             <div class="cta">
               <button
                 class="bg-black text-white mt-3 font-bold px-3 py-2 rounded-full cursor-pointer lg:text-xl lg:py-2"
@@ -49,22 +55,310 @@
         </div>
         <div
           class="description font-[700] m-auto mt-2 w-full px-6 sm:px-10 md:px-6 bg-yello-500"
-        >
-          <h1>
-            At Digital Den we sell UK used iPhone and Samsung phones with their
-            respective accessories like chargers, phone cases, screen guards and
-            airpods. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Provident, eveniet molestias cum saepe ipsam hic.Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Provident, eveniet molestias
-            cum saepe ipsam hic.
-          </h1>
+        ></div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product w-full px-4 py-4 bg-gray-400 sm:px-6 md:px-10 mb-10">
+      <div
+        class="container m-auto flex flex-col justify-center items-center w-full h-full"
+      >
+        <div class="product-text text-xl lg:text-2xl font-bold mb-1">
+          <h1>What We Offer</h1>
+        </div>
+        <div class="text-center text-sm font-semibold mb-10">
+          <p>
+            Our store offers a curated selection of the latest iPhones and
+            Samsung phones. Experience top-notch customer service and expert
+            advice tailored to your needs.
+          </p>
+        </div>
+        <div class="product-display grid grid-cols-12 gap-4 w-full h-fit">
+          <div
+            class="product-card1 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Quality Iphones at the best price in the market</p>
+            </div>
+            <div class="cta">
+              <button
+                class="bg-black text-white mt-3 font-bold px-3 py-2 rounded-full cursor-pointer lg:text-lg lg:py-1 mb-2"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="product-card2 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Quality Iphones at the best price in the market</p>
+            </div>
+            <div class="cta">
+              <button
+                class="bg-black text-white mt-3 font-bold px-3 py-2 rounded-full cursor-pointer lg:text-lg lg:py-1 mb-2"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="product-card3 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Quality Iphones at the best price in the market</p>
+            </div>
+            <div class="cta">
+              <button
+                class="bg-black text-white mt-3 font-bold px-3 py-2 rounded-full cursor-pointer lg:text-lg lg:py-1 mb-2"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Features -->
     <section
-      class="features sm:bg-red-500 md:bg-green-500 lg:bg-blue-500 xl:bg-purple-500"
-    ></section>
+      class="feature w-full px-4 py-4 sm:px-6 md:px-10 mb-10 "
+    >
+      <div class="container m-auto flex flex-col items-center w-full h-full">
+        <div class="feature-text text-xl lg:text-2xl font-bold mb-1">
+          <h1>Why Choose Us?</h1>
+        </div>
+        <div class="card-text text-center text-sm font-semibold mb-10">
+          <p>
+            Our store offers a curated selection of the latest iPhones and
+            Samsung phones. Experience top-notch customer service and expert
+            advice tailored to your needs.
+          </p>
+        </div>
+        <div class="feature-display grid grid-cols-12 gap-4 w-full h-fit mb-4">
+          <div
+            class="feature-card1 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Exclusive Deals on Latest Models</p>
+            </div>
+          </div>
+          <div
+            class="feature-card2 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Expert Support for Your Purchase</p>
+            </div>
+          </div>
+          <div
+            class="features-card3 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Quality Assurance With Every Device</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta">
+          <button
+            class="bg-black text-white mt-3 font-bold px-3 py-2 rounded-full cursor-pointer lg:text-lg lg:py-1 mb-2"
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotion -->
+    <section class="promotion w-full h-[90vh] px-4 py-4 bg-gray-400 sm:px-6 md:px-10">
+      <div class="container m-auto flex flex-col">
+        <div class="main-promotion m-auto md:items-center md:flex">
+          <div class="promotion-text">
+            <h1
+              class="font-bold text-center md:text-left text-2xl lg:text-3xl text-black"
+            >
+              Discover Our Latest Promotions
+            </h1>
+            <p class="hidden md:block text-sm">
+              Explore unbeatable deals on the latest iPhones and Samsung phones.
+              Don't miss out!
+            </p>
+            <div class="cta">
+              <button
+                class="bg-black text-white mt-3 font-bold px-3 py-2 rounded-full cursor-pointer hidden md:block lg:text-xl lg:py-2"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="promotion-slider w-[450px]">
+            <img name="slide1" alt="promotion-slider" />
+          </div>
+        </div>
+        <div
+          class="description font-[700] m-auto mt-2 w-full px-6 sm:px-10 md:px-6 bg-yello-500"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section
+      class="testimonial w-full px-4 py-4 sm:px-6 md:px-10 mb-10 "
+    >
+      <div class="container m-auto flex flex-col items-center w-full h-full">
+        <div class="testimonial-text text-xl lg:text-2xl font-bold mb-10">
+          <h1>Our Partners</h1>
+        </div>
+        <div
+          class="testimonial-display grid grid-cols-12 gap-4 w-full h-fit mb-4"
+        >
+          <div
+            class="testimonial-card1 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Exclusive Deals on Latest Models</p>
+            </div>
+          </div>
+          <div
+            class="testimonial-card2 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Expert Support for Your Purchase</p>
+            </div>
+          </div>
+          <div
+            class="testimonials-card3 col-span-12 md:col-span-4 border-black border-4 h-fit flex flex-col items-center"
+          >
+            <!-- change width when replacing the image -->
+            <div class="card-image flex justify-center h-10 bg-gray-400 mb-2">
+              <img src="assets/images/phone1.jpg" alt="" />
+            </div>
+            <div class="card-text text-center text-lg font-semibold">
+              <p>Quality Assurance With Every Device</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq w-full px-4 py-4 sm:px-6 md:px-10 mb-16 bg-gray-400 ">
+      <div class="container m-auto flex flex-col items-center w-full h-full ">
+        <div class="testimonial-text text-xl lg:text-2xl font-bold mb-1">
+          <h1>FAQs</h1>
+        </div>
+        <div class="card-text text-center text-sm font-semibold mb-10">
+          <p>
+            Here are some common questions about our products and services to
+            assist you.
+          </p>
+        </div>
+        <div class="faq-container">
+          <div class="question1 mb-2">
+            <div class="question1-text text-lg lg:text-xl font-bold mb-1">
+              <h1>What is your warranty?</h1>
+            </div>
+            <div class="question1-answer">
+              Our devices come with a standard one-year warranty. This covers
+              manufacturer defects and hardware issues. For more details, please
+              refer to our warranty policy.
+            </div>
+            <div class="question2 mb-2">
+              <div class="question2-text text-lg lg:text-xl font-bold mb-1">
+                <h1>How do I order?</h1>
+              </div>
+              <div class="question2-answer">
+                You can place an order directly through our website. Simply select your desired phone and follow the checkout process. If you need assistance, our customer service team is here to help.
+              </div>
+              <div class="question3 mb-2">
+                <div class="question3-text text-lg lg:text-xl font-bold mb-1">
+                  <h1>What are delivery options?</h1>
+                </div>
+                <div class="question3-answer">
+                  We offer standard and express delivery options. Standard delivery typically takes 5-7 business days, while express delivery can arrive within 1-3 business days. You can choose your preferred option at checkout.
+                </div>
+              <div class="question4 mb-2">
+                <div class="question4-text text-lg lg:text-xl font-bold mb-1">
+                  <h1>Can I return items?</h1>
+                </div>
+                <div class="question4-answer">
+                  Yes, we accept returns within 30 days of purchase. Items must be in original condition and packaging. Please refer to our return policy for more details.
+                </div>
+              </div>
+              <div class="question5 mb-2">
+                <div class="question5-text text-lg lg:text-xl font-bold mb-1">
+                  <h1>How to track orders?</h1>
+                </div>
+                <div class="question5-answer">
+                  Once your order has shipped, you will receive a tracking number via email. You can use this number on our website to track your order's status. If you have any issues, feel free to reach out.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- Form -->
+    <section class="form w-full px-4 py-4 sm:px-6 md:px-10 mb-16 ">
+      <div class="container m-auto flex flex-col items-center w-full h-full">
+        <div class="testimonial-text text-xl lg:text-2xl font-bold mb-1">
+          <h1>Stay Updated</h1>
+        </div>
+        <div class="card-text text-center text-sm font-semibold mb-10">
+          <p>
+            Join Our Whatsapp group to stay informed on our latest Prices and Promos
+          </p>
+        </div>
+
+        <form class="flex flex-col gap-4" >
+          <input class="border-2 border-black" type="text" placeholder="Your Full Name">
+          <input class="border-2 border-black" type="tel" placeholder="Your Whatsapp Number">
+          <button class="bg-black text-white">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer w-full px-4 py-4 bg-black text-white sm:px-6 md:px-10 ">
+      <div class="container m-auto flex flex-col items-center w-full h-full">
+        <hr class="w-full border-t-2 border-white mb-4">
+        <div class="copyright">
+          <p>© 2024 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+
   </body>
 </html>

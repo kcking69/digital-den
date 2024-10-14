@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'hero-text-bgc': ' rgba(3, 3, 3, 0.2)',
+        'hero-text-bgc': ' rgba(3, 3, 3, 0.5)',
+        ash: ' rgba(143, 143, 143, 0.5)',
       },
     },
   },
