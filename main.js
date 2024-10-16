@@ -1,6 +1,9 @@
+const faqIcons = document.querySelectorAll('.reveal');
+const answers = document.querySelectorAll('.answer');
+
 let i = 0;
-let images = [];
-let time = 3000;
+const images = [];
+const time = 3000;
 
 // Image list
 images[0] = 'assets/images/phone1.jfif';
@@ -25,3 +28,20 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+
+// Faq Icon toggle
+let show = false;
+
+for (let i = 0; i < faqIcons.length; i++) {
+  faqIcons[i].addEventListener('click', () => {
+    if (!show) {
+      answers[i].style.opacity = '1';
+      faqIcons[i].style.transform = 'rotate(180deg)';
+      show = true;
+    } else {
+      answers[i].style.opacity = '0';
+      faqIcons[i].style.transform = 'rotate(0)';
+      show = false;
+    }
+  });
+}
