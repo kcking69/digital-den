@@ -35,13 +35,29 @@ let show = false;
 for (let i = 0; i < faqIcons.length; i++) {
   faqIcons[i].addEventListener('click', () => {
     if (!show) {
-      answers[i].style.opacity = '1';
+      answers[i].style.display = 'block';
       faqIcons[i].style.transform = 'rotate(180deg)';
       show = true;
     } else {
-      answers[i].style.opacity = '0';
+      answers[i].style.display = 'none';
       faqIcons[i].style.transform = 'rotate(0)';
       show = false;
     }
   });
 }
+
+// Animate on Scroll
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+    //  else {
+    //   entry.target.classList.remove('show');
+    // }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.notshow');
+hiddenElements.forEach((el) => observer.observe(el));
